@@ -1,9 +1,7 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
-import i18n from "i18next";
 import {
   FooterSection,
   Title,
@@ -28,7 +26,7 @@ interface SocialLinkProps {
 
 const Footer = ({ t }: any) => {
   const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
+    return language;
   };
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
@@ -51,59 +49,57 @@ const Footer = ({ t }: any) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
-              </Para>
+              <Language>{"Contact"}</Language>
+              <Large to="/">{"Tell us everything"}</Large>
+              <Para>{`Do you have any question? Feel free to reach out.`}</Para>
               <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
+                <Chat>{`Let's Chat`}</Chat>
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
+              <Title>{"Policy"}</Title>
               <Large to="/" left="true">
-                {t("Application Security")}
+                {"Application Security"}
               </Large>
               <Large left="true" to="/">
-                {t("Software Principles")}
+                {"Software Principles"}
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large left="true" to="/">
-                {t("Support Center")}
+                {"Support Center"}
               </Large>
               <Large left="true" to="/">
-                {t("Customer Support")}
+                {"Customer Support"}
               </Large>
             </Col>
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
-              <Language>{t("Address")}</Language>
+              <Language>{"Address"}</Language>
               <Para>Rancho Santa Margarita</Para>
               <Para>2131 Elk Street</Para>
               <Para>California</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
+              <Title>{"Company"}</Title>
               <Large left="true" to="/">
-                {t("About")}
+                {"About"}
               </Large>
               <Large left="true" to="/">
-                {t("Blog")}
+                {"Blog"}
               </Large>
               <Large left="true" to="/">
-                {t("Press")}
+                {"Press"}
               </Large>
               <Large left="true" to="/">
-                {t("Careers & Culture")}
+                {"Careers & Culture"}
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
+              <Label htmlFor="select-lang">{"Language"}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
@@ -174,4 +170,4 @@ const Footer = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Footer);
+export default Footer;

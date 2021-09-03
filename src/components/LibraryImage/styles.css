@@ -1,0 +1,21 @@
+.slick-slider .arrow {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  top: calc(50% - 40px);
+  z-index: 1;
+  width: 35px;
+  cursor: pointer;
+}
+
+.next-arrow {
+  right: 24px;
+}
+
+.pre-arrow {
+  left: 24px;
+}
+
+.slick-slider:hover .arrow {
+  opacity: 1;
+}

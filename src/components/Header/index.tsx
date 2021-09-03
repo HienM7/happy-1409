@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
-import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -15,9 +14,11 @@ import {
   Outline,
   Span,
 } from "./styles";
+import "./styles.css";
 
 const Header = ({ t }: any) => {
   const [visible, setVisibility] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const showDrawer = () => {
     setVisibility(!visible);
@@ -38,32 +39,44 @@ const Header = ({ t }: any) => {
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+          <Span>{"About"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
+          <Span>{"Mission"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+          <Span>{"Product"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() => scrollTo("product")}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{"Contact"}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
     );
   };
 
+  const changeHeader = () => {
+    if (window.scrollY > 0) {
+      return setNavbar(true);
+    }
+
+    if (navbar) {
+      return setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeHeader);
+
   return (
-    <HeaderSection>
+    <HeaderSection className={navbar ? "header" : "header active"}>
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <SvgIcon src="cat.png" width="61px" height="64px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -90,4 +103,4 @@ const Header = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Header);
+export default Header;

@@ -1,0 +1,20 @@
+.introduce-container {
+  background-color: #171717;
+  padding: 220px 0px 210px 0px;
+}
+
+.introduce-content h3,
+div {
+  color: #c6c6c6;
+}
+
+.introduce-content div {
+  line-height: 28px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .introduce-container {
+    padding: 125px 0px 65px 0px;
+  }
+}

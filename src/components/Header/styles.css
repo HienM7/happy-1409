@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header.active {
+  background-color: #171717;
+  padding: 0.6rem 0.5rem;
+  box-shadow: none;
+}
+
+.header.active span {
+  color: #c6c6c6;
+}
+
+.header.active span:hover {
+  text-underline-position: under;
+  text-decoration: #c6c6c6 wavy underline;
+}
+.header.active span:active {
+  text-underline-position: under;
+  text-decoration: #c6c6c6 wavy underline;
+}
+.header.active span:focus {
+  text-underline-position: under;
+  text-decoration: #c6c6c6 wavy underline;
+}

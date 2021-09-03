@@ -1,29 +1,29 @@
 export interface ContainerProps {
   border?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export interface ButtonProps {
   color?: string;
   fixedWidth?: boolean;
   name?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   onClick?: () => void;
 }
 
 export interface SvgIconProps {
-  src: string;
-  width: string;
-  height: string;
+  src?: string;
+  width?: string;
+  height?: string;
 }
 
 export interface InputProps {
-  name: string;
-  placeholder: string;
-  t: any;
+  name?: string;
+  placeholder?: string;
+  t?: any;
   type?: string;
   value?: string;
-  onChange: (
+  onChange?: (
     event:
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
@@ -31,7 +31,7 @@ export interface InputProps {
 }
 
 export interface validateProps {
-  name: string;
-  message: string;
-  email: string;
+  name?: string;
+  message?: string;
+  email?: string;
 }
