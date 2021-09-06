@@ -1,6 +1,9 @@
 .introduce-container {
+  min-height: 100vh;
   background-color: #171717;
-  padding: 220px 0px 210px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .introduce-content h3,
@@ -13,8 +16,19 @@ div {
   font-size: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .introduce-container {
     padding: 125px 0px 65px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* .introduce-container {
+    padding: 125px 0px 65px 0px;
+  } */
+  .introduce-content > div {
+    padding-left: 15px;
+  }
+  .introduce-content h3 {
+    padding-left: 15px;
   }
 }

@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "./styles.css";
 import HoverRainbow from "../ImageHoverEffect/HoverRainbow";
+import { Fade } from "react-awesome-reveal";
 
 const settings = {
   dots: false,
@@ -10,7 +11,7 @@ const settings = {
   // slidesToScroll: 4,
   arrows: true,
   slidesToShow: 5,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 3000,
   slidesToScroll: 1,
   initialSlide: 0,
@@ -67,23 +68,40 @@ function SamplePrevArrow(props: any) {
 
 const LibraryImage = () => {
   return (
-    <Slider {...settings}>
-      <HoverRainbow image="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.15752-9/172206441_145372260859745_5771222901979774173_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=1zWeyy92x7oAX-aHVkh&_nc_oc=AQn-hzM5D0MMuQLFo1fDcRTFxoZrS-Qq12P5ke4BYiIC94Z3_FEzwNlRYTIhkV2GSt-NpNo_eeAjJSlKUNAAw7pp&_nc_ht=scontent.fdad3-2.fna&oh=3647d457807532d7291e4ecf43ac175c&oe=61564F7F" />
-      <HoverRainbow
-        position={true}
-        image="https://scontent-sin6-3.xx.fbcdn.net/v/t1.15752-9/240136040_649106822732634_4113800451286040945_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Dw6iwmj5UAUAX_GkZ9x&_nc_ht=scontent-sin6-3.xx&oh=7a2953861a965c4ab57e37d4829deade&oe=615859A5"
-      />
-      <HoverRainbow image="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-9/240424701_1055498718593803_2258780380993041468_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=ItXkxucWzycAX9od2Am&_nc_ht=scontent.fdad3-3.fna&oh=31b0deae1b45f61b6a52f063409ab2a6&oe=61561688" />
-      <HoverRainbow
-        position={true}
-        image="https://scontent.fdad3-1.fna.fbcdn.net/v/t1.15752-9/240603958_872337173707242_9167099196012190910_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=IlHUz0c4cjUAX-RLEmN&_nc_ht=scontent.fdad3-1.fna&oh=c0f758d4179942f3f5e21cd9b6ce999f&oe=61579FC1"
-      />
-      <HoverRainbow image="https://scontent-sin6-3.xx.fbcdn.net/v/t1.15752-9/240253776_911480912801057_851497277395440113_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Fc1q60VaVo8AX808cqL&tn=KWxSSOkmfOq_shp1&_nc_ht=scontent-sin6-3.xx&oh=55ab60f5e00a38de2de0463347f18b32&oe=615639B2" />
-      <HoverRainbow
-        position={true}
-        image="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-9/240662148_534564724291512_9095850778297382898_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=4wrKzNmpypkAX-98iDq&_nc_ht=scontent.fdad3-3.fna&oh=24f3f9e3d747ac900465897225fad5f2&oe=615691B4"
-      />
-    </Slider>
+    <div className="img-library" id="library">
+      <Fade direction="up" duration={1200} triggerOnce={true}>
+        <h1 className="wish">
+          One again, happy birthday <img src="/img/svg/smile.svg" alt="smile" />
+        </h1>
+      </Fade>
+      <Slider {...settings}>
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630941378/mhuong/66c7cf39541da243fb0c_1_ihe4su.jpg" />
+        <HoverRainbow
+          position={true}
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1630926781/mhuong/642a8cb8d3a725f97cb637_vu0hiw.jpg"
+        />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630926780/mhuong/6cdb03ac5bb3adedf4a25_c386wj.jpg" />
+        <HoverRainbow
+          position={true}
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1630940254/mhuong/27a7bac21ae6ecb8b5f7_ufhtsz.jpg"
+        />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630941508/mhuong/8d1c0350e474122a4b65_1_jisvmt.jpg" />
+        <HoverRainbow
+          position={true}
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1630940255/mhuong/60fb10d3edf71ba942e6_fwr7bt.jpg"
+        />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630941873/mhuong/fde9dc121836ee68b727_datts0.jpg" />
+        <HoverRainbow
+          position={true}
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1630940253/mhuong/b475a2be059af3c4aa8b_vkdssw.jpg"
+        />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630926779/mhuong/e07c6dee32f1c4af9de035_b6lnfc.jpg" />
+        <HoverRainbow
+          position={true}
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1630926780/mhuong/9a3abd3ee221147f4d3018_thzfig.jpg"
+        />
+      </Slider>
+    </div>
   );
 };
 

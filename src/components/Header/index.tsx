@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
+import { Link } from "react-scroll";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+
 import {
   HeaderSection,
   LogoContainer,
@@ -29,32 +31,30 @@ const Header = ({ t }: any) => {
   };
 
   const MenuItem = () => {
-    const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
-    };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{"About"}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{"Mission"}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{"Product"}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("product")}
-        >
-          <Span>
-            <Button>{"Contact"}</Button>
-          </Span>
-        </CustomNavLinkSmall>
+        <Link to="remember" smooth={true} spy={true} offset={-80}>
+          <CustomNavLinkSmall>
+            <Span>{"Remember"}</Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <Link to="memory" smooth={true} spy={true} offset={-80}>
+          <CustomNavLinkSmall>
+            <Span>{"Memory"}</Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <Link to="wishes" smooth={true} spy={true} offset={-80}>
+          <CustomNavLinkSmall>
+            <Span>{"Wishes"}</Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <Link to="library" smooth={true} spy={true} offset={-80}>
+          <CustomNavLinkSmall style={{ width: "180px" }}>
+            <Span>
+              <Button>{"Library"}</Button>
+            </Span>
+          </CustomNavLinkSmall>
+        </Link>
       </>
     );
   };
@@ -76,7 +76,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="cat.png" width="61px" height="64px" />
+            <SvgIcon src="cat.png" width="55px" height="57px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />

@@ -21,18 +21,26 @@ export const Styles = createGlobalStyle`
         font-family: 'Motiva Sans Light', sans-serif;
     }
 
-
     body {
         margin:0;
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #f5f5f7;
         overflow-x: hidden;
+
     }
 
     a:hover {
         color: #18216d;
+    }
+
+    img {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
     }
 
     input,
@@ -59,11 +67,11 @@ export const Styles = createGlobalStyle`
     h6 {
         font-family: 'Motiva Sans Bold', serif;
         color: #18216d;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
-          font-size: 47px;
+          font-size: 37px;
         }
       
         @media only screen and (max-width: 414px) {

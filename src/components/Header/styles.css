@@ -11,6 +11,7 @@
   background-color: #171717;
   padding: 0.6rem 0.5rem;
   box-shadow: none;
+  position: absolute;
 }
 
 .header.active span {

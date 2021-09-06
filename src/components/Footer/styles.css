@@ -1,0 +1,25 @@
+.footer-container {
+  padding: 100px 0px 50px;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px 0px;
+  gap: 40px;
+}
+
+.icon-social {
+}
+
+.footer-container .note {
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.footer-container .info {
+  font-size: 12px;
+  text-align: center;
+}

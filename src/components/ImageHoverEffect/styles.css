@@ -1,0 +1,355 @@
+.hover-effect-grid {
+  margin: 0 10px;
+}
+
+/* Common style */
+.hover-effect-grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hover-effect-grid figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.hover-effect-grid figure h4 {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 25px 30px;
+  color: rgb(198, 198, 198);
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 1;
+  transition: bottom 0.3s ease 0s;
+}
+
+.hover-effect-grid figure:hover h4 {
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+}
+
+figure.hover-scale img {
+  max-width: none;
+  width: 100%;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+figure.hover-scale::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: height 0.3s ease 0s;
+}
+
+figure.hover-scale:hover::after {
+  height: 70%;
+}
+
+figure.hover-scale figcaption {
+  text-align: left;
+}
+
+figure.hover-scale:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* rainbow */
+.hover-effect-grid-2 {
+  padding-bottom: 41px;
+}
+.hover-effect-grid-2 .hover-rainbow {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
+  background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
+}
+
+.active-position {
+  position: relative;
+  top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .active-position {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.hover-effect-grid-2 .hover-rainbow img {
+  width: 100%;
+  opacity: 0.85;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hover-effect-grid-2 .hover-rainbow:hover img {
+  opacity: 0.6;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hover-effect-grid-2 .hover-rainbow h4 {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 25px 30px;
+  color: rgb(198, 198, 198);
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 1;
+  transition: bottom 0.3s ease 0s;
+}
+
+.hover-effect-grid-2 .hover-rainbow:hover h4 {
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+}
+
+/* TV effect */
+
+.tv-grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tv-grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.tv-grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.tv-grid figure figcaption::before,
+.tv-grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.tv-grid figure figcaption,
+.tv-grid figure figcaption > .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as .icon button */
+.tv-grid figure figcaption > .icon {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.tv-grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.tv-grid figure h2 span {
+  font-weight: 800;
+}
+
+.tv-grid figure h2,
+.tv-grid figure p {
+  margin: 0;
+}
+
+.tv-grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-terry {
+  background: #34495e;
+  border-radius: 15px;
+}
+
+figure.effect-terry figcaption {
+  padding: 1em;
+}
+
+figure.effect-terry figcaption::before,
+figure.effect-terry figcaption::after {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-style: solid;
+  border-color: #101010;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-terry figcaption::before {
+  right: 0;
+  bottom: 0;
+  border-width: 0 70px 60px 0;
+  -webkit-transform: translate(70px, 60px);
+  transform: translate(70px, 60px);
+}
+
+figure.effect-terry figcaption::after {
+  top: 0;
+  left: 0;
+  border-width: 15px 0 0 15px;
+  -webkit-transform: translate(-15px, -15px);
+  transform: translate(-15px, -15px);
+}
+
+figure.effect-terry img,
+figure.effect-terry p .icon {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-terry img {
+  opacity: 0.85;
+}
+
+figure.effect-terry h2 {
+  color: #fff;
+  font-family: "Raleway", Arial, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.4em 20px;
+  text-align: right;
+  width: 50%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 920px) {
+  figure.effect-terry h2 {
+    padding: 0.75em 17px;
+    font-size: 120%;
+  }
+}
+
+figure.effect-terry p {
+  float: right;
+  clear: both;
+  text-align: left;
+  text-transform: none;
+  font-size: 111%;
+}
+
+figure.effect-terry p .icon {
+  display: block;
+  margin-bottom: 1em;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translate(90px, 0);
+  transform: translate(90px, 0);
+}
+
+figure.effect-terry p .icon:first-child:hover,
+figure.effect-terry p .icon:first-child:focus {
+  color: #78c59c;
+}
+
+figure.effect-terry p .icon:nth-child(2):hover,
+figure.effect-terry p .icon:nth-child(2):focus {
+  color: #d7443e;
+}
+
+figure.effect-terry p .icon:nth-child(3):hover,
+figure.effect-terry p .icon:nth-child(3):focus {
+  color: #5ba8e1;
+}
+
+figure.effect-terry p .icon:nth-child(4):hover,
+figure.effect-terry p .icon:nth-child(4):focus {
+  color: #f3cf3f;
+}
+
+figure.effect-terry:hover figcaption::before,
+figure.effect-terry:hover figcaption::after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+figure.effect-terry:hover img {
+  opacity: 0.6;
+  transform: translate(-25px, -15px);
+}
+
+figure.effect-terry:hover h2,
+figure.effect-terry:hover p .icon {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  text-align: left;
+}
+
+figure.effect-terry:hover p .icon {
+  opacity: 1;
+}
+
+figure.effect-terry:hover p .icon:first-child {
+  -webkit-transition-delay: 0.025s;
+  transition-delay: 0.025s;
+}
+
+figure.effect-terry:hover p .icon:nth-child(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-terry:hover p .icon:nth-child(3) {
+  -webkit-transition-delay: 0.075s;
+  transition-delay: 0.075s;
+}
+
+figure.effect-terry:hover p .icon:nth-child(4) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}

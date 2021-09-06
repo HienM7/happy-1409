@@ -1,0 +1,157 @@
+.lock-back-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 100px 0px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.lock-back-title {
+  margin: 0px auto 60px auto;
+}
+
+.lock-back-container h5 {
+  font-size: 16px;
+  color: #352fd9;
+  line-height: 18px;
+  font-weight: 500;
+  margin: 0px 0px 15px;
+}
+
+.lock-back-container h2 {
+  color: rgb(25, 25, 25);
+  font-size: 30px;
+  line-height: 54px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.lock-back-container h3 {
+  color: rgb(39, 51, 67);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.lock-back-container p {
+  color: rgb(78, 88, 101);
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.quote-container {
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.thumbnail {
+  margin: 30px 0 40px;
+}
+
+.thumbnail img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .lock-back-title {
+    margin: 0px auto 56px auto;
+  }
+  .lock-back-container {
+    padding: 80px 0px;
+    margin-bottom: 20px;
+  }
+  .lock-back-container h2 {
+    font-size: 28px;
+    line-height: 52px;
+  }
+  .thumbnail {
+    margin: 0px 0px 27px;
+  }
+  .lock-back-container h3 {
+    font-size: 22px;
+    margin: 0px 0px 12px;
+  }
+  .lock-back-container p {
+    font-size: 15px;
+  }
+  .quote-container {
+    padding: 0px 25px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .lock-back-container h3 {
+    font-size: 20px;
+    margin: 0px 0px 12px;
+  }
+  .lock-back-title {
+    margin: 0px auto 50px auto;
+  }
+  .lock-back-container h2 {
+    font-size: 26px;
+    line-height: 46px;
+  }
+
+  .lock-back-container h5 {
+    font-size: 14px;
+  }
+  .lock-back-container {
+    padding: 65px 0px;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .lock-back-container h2 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .lock-back-container h5 {
+    font-size: 14px;
+  }
+
+  .quote-container {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .lock-back-container h2 {
+    font-size: 19px;
+    line-height: 35px;
+  }
+  .lock-back-container h5 {
+    font-size: 12px;
+  }
+  .lock-back-container {
+    padding: 50px 0px;
+  }
+  .thumbnail {
+    margin: 0px;
+    width: 60px;
+    flex-shrink: 0;
+  }
+  .lock-back-container h3 {
+    line-height: 34px;
+    margin-bottom: 7px;
+  }
+  .thumbnail img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 5px;
+  }
+  .quote-container {
+    display: flex;
+    text-align: left;
+  }
+  .quote-content {
+    padding-left: 20px;
+  }
+  .lock-back-container {
+    text-align: left;
+  }
+}

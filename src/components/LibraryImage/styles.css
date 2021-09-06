@@ -19,3 +19,50 @@
 .slick-slider:hover .arrow {
   opacity: 1;
 }
+
+.img-library {
+  padding: 50px 0px 150px;
+  background-color: #fff;
+}
+
+.img-library h1 {
+  text-align: center;
+  padding: 80px 0px 150px;
+  color: rgb(25, 25, 25);
+  font-size: 30px;
+  margin: 0px;
+  font-weight: 600;
+}
+.img-library h1 img {
+  width: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .img-library h1 {
+    font-size: 28px;
+    padding: 50px 0px 100px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .img-library h1 {
+    font-size: 24px;
+    padding: 50px 0px 50px;
+  }
+  .img-library {
+    padding: 50px 0px 50px;
+    background-color: #fff;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .img-library h1 {
+    position: relative;
+    top: 0;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .img-library h1 {
+    font-size: 19px;
+  }
+}

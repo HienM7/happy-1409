@@ -19,7 +19,7 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
   };
   return (
     <MiddleBlockSection>
-      <Fade direction="up" duration={1200}>
+      <Fade direction="up" duration={1200} triggerOnce={true}>
         <Row justify="center" align="middle">
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>

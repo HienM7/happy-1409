@@ -1,4 +1,4 @@
-import "../style.css";
+import "../styles.css";
 interface HoverScaleProps {
   image: string;
   title: string;
