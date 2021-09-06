@@ -28,7 +28,7 @@ const TVEffect = ({
         <img src={image} alt="img16" />
         <figcaption>
           <h2>{title}</h2>
-          <p>
+          <div className="icon-container">
             <div className="icon">
               <FontAwesomeIcon icon={faDownload} />
             </div>
@@ -41,7 +41,7 @@ const TVEffect = ({
             <div className="icon">
               <FontAwesomeIcon icon={faTags} />
             </div>
-          </p>
+          </div>
         </figcaption>
       </figure>
     </div>

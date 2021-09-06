@@ -77,7 +77,7 @@ const Introduce = () => {
                 }}
                 title="Happy"
                 titleIcon="/img/svg/happy.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630926780/mhuong/d905de94818b77d52e9a36_brfg8n.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1630948450/mhuong/d905de94818b77d52e9a36_mqbqlh.jpg"
               />
               <HoverScale
                 imageStyle={{ position: "relative", bottom: 4 }}

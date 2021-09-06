@@ -192,11 +192,11 @@ figure.hover-scale:hover img {
 }
 
 .tv-grid figure h2,
-.tv-grid figure p {
+.tv-grid figure .icon-container {
   margin: 0;
 }
 
-.tv-grid figure p {
+.tv-grid figure .icon-container {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
@@ -239,7 +239,7 @@ figure.effect-terry figcaption::after {
 }
 
 figure.effect-terry img,
-figure.effect-terry p .icon {
+figure.effect-terry .icon-container .icon {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
@@ -275,7 +275,7 @@ figure.effect-terry h2 {
   }
 }
 
-figure.effect-terry p {
+figure.effect-terry .icon-container {
   float: right;
   clear: both;
   text-align: left;
@@ -283,7 +283,7 @@ figure.effect-terry p {
   font-size: 111%;
 }
 
-figure.effect-terry p .icon {
+figure.effect-terry .icon-container .icon {
   display: block;
   margin-bottom: 1em;
   color: #fff;
@@ -292,23 +292,23 @@ figure.effect-terry p .icon {
   transform: translate(90px, 0);
 }
 
-figure.effect-terry p .icon:first-child:hover,
-figure.effect-terry p .icon:first-child:focus {
+figure.effect-terry .icon-container .icon:first-child:hover,
+figure.effect-terry .icon-container .icon:first-child:focus {
   color: #78c59c;
 }
 
-figure.effect-terry p .icon:nth-child(2):hover,
-figure.effect-terry p .icon:nth-child(2):focus {
+figure.effect-terry .icon-container .icon:nth-child(2):hover,
+figure.effect-terry .icon-container .icon:nth-child(2):focus {
   color: #d7443e;
 }
 
-figure.effect-terry p .icon:nth-child(3):hover,
-figure.effect-terry p .icon:nth-child(3):focus {
+figure.effect-terry .icon-container .icon:nth-child(3):hover,
+figure.effect-terry .icon-container .icon:nth-child(3):focus {
   color: #5ba8e1;
 }
 
-figure.effect-terry p .icon:nth-child(4):hover,
-figure.effect-terry p .icon:nth-child(4):focus {
+figure.effect-terry .icon-container .icon:nth-child(4):hover,
+figure.effect-terry .icon-container .icon:nth-child(4):focus {
   color: #f3cf3f;
 }
 
@@ -324,32 +324,32 @@ figure.effect-terry:hover img {
 }
 
 figure.effect-terry:hover h2,
-figure.effect-terry:hover p .icon {
+figure.effect-terry:hover .icon-container .icon {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   text-align: left;
 }
 
-figure.effect-terry:hover p .icon {
+figure.effect-terry:hover .icon-container .icon {
   opacity: 1;
 }
 
-figure.effect-terry:hover p .icon:first-child {
+figure.effect-terry:hover .icon-container .icon:first-child {
   -webkit-transition-delay: 0.025s;
   transition-delay: 0.025s;
 }
 
-figure.effect-terry:hover p .icon:nth-child(2) {
+figure.effect-terry:hover .icon-container .icon:nth-child(2) {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
-figure.effect-terry:hover p .icon:nth-child(3) {
+figure.effect-terry:hover .icon-container .icon:nth-child(3) {
   -webkit-transition-delay: 0.075s;
   transition-delay: 0.075s;
 }
 
-figure.effect-terry:hover p .icon:nth-child(4) {
+figure.effect-terry:hover .icon-container .icon:nth-child(4) {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }

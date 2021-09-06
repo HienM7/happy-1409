@@ -65,6 +65,7 @@ export const Menu = styled("h5")`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: #464646;
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`

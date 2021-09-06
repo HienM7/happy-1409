@@ -6,11 +6,13 @@ import ScrollToTop from "../../common/ScrollToTop";
 import LockBack from "../../components/LockBack";
 import Memory from "../../components/Memory";
 import MemoryItem from "../../components/MemoryItem";
+import Music from "../../components/Music";
 
 const Home = () => {
   return (
     <div>
       <ScrollToTop />
+      <Music />
       <Introduce />
       <LockBack />
       <Memory />

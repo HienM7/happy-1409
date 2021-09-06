@@ -35,7 +35,11 @@ const Footer = ({ t }: any) => {
           </div>
           <div className="note">
             Made by Helios
-            <img src="/img/svg/cat.png" width="15px" />
+            <img
+              src="/img/svg/cat.png"
+              width="15px"
+              style={{ position: "relative", bottom: 2, left: 5 }}
+            />
           </div>
           <div className="info">© 2021</div>
         </Container>
