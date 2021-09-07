@@ -40,7 +40,7 @@ const MemoryItem = () => {
           >
             <TVEffect
               title="@mhuongne"
-              image="https://res.cloudinary.com/helios-m7/image/upload/v1630926778/mhuong/f25310d44ecbb895e1da22_k5ptdn.jpg"
+              image="https://res.cloudinary.com/helios-m7/image/upload/v1631023215/maihuong/f25310d44ecbb895e1da22_hsysah.jpg"
             />
           </Col>
         </Row>

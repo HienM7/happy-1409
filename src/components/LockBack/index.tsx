@@ -19,7 +19,7 @@ const LockBack = () => {
               <div className="quote-container">
                 <div className="thumbnail">
                   <img
-                    src="https://res.cloudinary.com/helios-m7/image/upload/v1630926781/mhuong/avatar4_zowklf.jpg"
+                    src="https://res.cloudinary.com/helios-m7/image/upload/v1631024194/maihuong/avatar4_yjufel.jpg"
                     alt="img"
                   />
                 </div>
@@ -36,7 +36,7 @@ const LockBack = () => {
               <div className="quote-container">
                 <div className="thumbnail">
                   <img
-                    src="https://res.cloudinary.com/helios-m7/image/upload/v1630926782/mhuong/avatar2_j0ptn5.jpg"
+                    src="https://res.cloudinary.com/helios-m7/image/upload/v1631023294/maihuong/avatar2_vzc23f.jpg"
                     alt="img"
                   />
                 </div>
@@ -57,7 +57,7 @@ const LockBack = () => {
               <div className="quote-container">
                 <div className="thumbnail">
                   <img
-                    src="https://res.cloudinary.com/helios-m7/image/upload/v1630926781/mhuong/avatar_roxsac.jpg"
+                    src="https://res.cloudinary.com/helios-m7/image/upload/v1631023271/maihuong/avatar_bh87nd.jpg"
                     alt="img"
                   />
                 </div>

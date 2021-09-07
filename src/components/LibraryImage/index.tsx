@@ -73,30 +73,30 @@ const LibraryImage = () => {
         </h1>
       </Fade>
       <Slider {...settings}>
-        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630941378/mhuong/66c7cf39541da243fb0c_1_ihe4su.jpg" />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1631023232/maihuong/66c7cf39541da243fb0c_xvdmo0.jpg" />
         <HoverRainbow
           position={true}
-          image="https://res.cloudinary.com/helios-m7/image/upload/v1630926781/mhuong/642a8cb8d3a725f97cb637_vu0hiw.jpg"
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1631023236/maihuong/642a8cb8d3a725f97cb637_jhman0.jpg"
         />
-        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630926780/mhuong/6cdb03ac5bb3adedf4a25_c386wj.jpg" />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1631023222/maihuong/6cdb03ac5bb3adedf4a25_jzmg3v.jpg" />
         <HoverRainbow
           position={true}
-          image="https://res.cloudinary.com/helios-m7/image/upload/v1630940254/mhuong/27a7bac21ae6ecb8b5f7_ufhtsz.jpg"
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1631023234/maihuong/27a7bac21ae6ecb8b5f7_tgl0sz.jpg"
         />
-        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630941508/mhuong/8d1c0350e474122a4b65_1_jisvmt.jpg" />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1631023224/maihuong/8d1c0350e474122a4b65_1_pytajv.jpg" />
         <HoverRainbow
           position={true}
-          image="https://res.cloudinary.com/helios-m7/image/upload/v1630940255/mhuong/60fb10d3edf71ba942e6_fwr7bt.jpg"
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1631024289/maihuong/60fb10d3edf71ba942e6_uig9qs.jpg"
         />
-        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630941873/mhuong/fde9dc121836ee68b727_datts0.jpg" />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1631023216/maihuong/fde9dc121836ee68b727_xr14jc.jpg" />
         <HoverRainbow
           position={true}
-          image="https://res.cloudinary.com/helios-m7/image/upload/v1630940253/mhuong/b475a2be059af3c4aa8b_vkdssw.jpg"
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1631023277/maihuong/b475a2be059af3c4aa8b_ruyoul.jpg"
         />
-        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1630926779/mhuong/e07c6dee32f1c4af9de035_b6lnfc.jpg" />
+        <HoverRainbow image="https://res.cloudinary.com/helios-m7/image/upload/v1631023211/maihuong/e07c6dee32f1c4af9de035_nrixyr.jpg" />
         <HoverRainbow
           position={true}
-          image="https://res.cloudinary.com/helios-m7/image/upload/v1630926780/mhuong/9a3abd3ee221147f4d3018_thzfig.jpg"
+          image="https://res.cloudinary.com/helios-m7/image/upload/v1631024282/maihuong/9a3abd3ee221147f4d3018_ne9n4d.jpg"
         />
       </Slider>
     </div>

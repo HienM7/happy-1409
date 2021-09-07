@@ -19,7 +19,7 @@ const Memory = () => {
             >
               <TVEffect
                 title="@maihuongne"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630926779/mhuong/0dba9588ca973cc9658614_mk2upn.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631024231/maihuong/0dba9588ca973cc9658614_gd1p8v.jpg"
               />
             </Fade>
           </Col>

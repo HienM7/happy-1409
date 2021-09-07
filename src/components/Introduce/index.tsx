@@ -77,25 +77,25 @@ const Introduce = () => {
                 }}
                 title="Happy"
                 titleIcon="/img/svg/happy.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630948450/mhuong/d905de94818b77d52e9a36_mqbqlh.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631023275/maihuong/d905de94818b77d52e9a36_lxnaht.jpg"
               />
               <HoverScale
                 imageStyle={{ position: "relative", bottom: 4 }}
                 title="Birthday !!!"
                 titleIcon="/img/svg/birthday.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630928065/mhuong/mhx_ej0ka7.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631024551/maihuong/mhx_ej0ka7_c9glq8.jpg"
               />
               <HoverScale
                 imageStyle={{ position: "relative", bottom: 4.5 }}
                 title="Best"
                 titleIcon="/img/svg/best.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630926782/mhuong/c63b934dcb523d0c64434_ihb6ux.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631024020/maihuong/c63b934dcb523d0c64434_bn0efo.jpg"
               />
               <HoverScale
                 imageStyle={{ position: "relative", bottom: 1.25 }}
                 title="Wishes"
                 titleIcon="/img/svg/wishes.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630926782/mhuong/d4a913384c27ba79e33629_t4avbo.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631023207/maihuong/d4a913384c27ba79e33629_dhhxs1.jpg"
               />
               <HoverScale
                 title="For"
@@ -106,12 +106,12 @@ const Introduce = () => {
                   height: 21,
                 }}
                 titleIcon="/img/svg/for.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630926778/mhuong/e91d2aef38f1ceaf97e0_vszkoy.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631023215/maihuong/e91d2aef38f1ceaf97e0_jyapb3.jpg"
               />
               <HoverScale
                 title="You"
                 titleIcon="/img/svg/you.svg"
-                image="https://res.cloudinary.com/helios-m7/image/upload/v1630926780/mhuong/6cdb03ac5bb3adedf4a25_c386wj.jpg"
+                image="https://res.cloudinary.com/helios-m7/image/upload/v1631023222/maihuong/6cdb03ac5bb3adedf4a25_jzmg3v.jpg"
               />
             </Slider>
             {/* </div> */}
